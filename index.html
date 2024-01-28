@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div class="container">
-        <div class="new-task-container">
-            <input type="text" class="new-task-input" placeholder="Tarefas para ser feitas..."/>
-            <button class="new-task-button">Adicionar</button>
-        </div>
-        <div class="tasks-container">
-            <div class="task-item">
-               
-            </div>
-        </div>
-    </div>    
-    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+    <form>    
+        <h2>Insera sua tarefa</h2>
+        <input type="text" placeholder="Tarefas a serem feitas...">
+        <button type="submit">Adicionar</button>
+        <ol><li id="linha-cima"></li></ol>
+    </form>
+    <form action="">
+        <p id="text-output"></p>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>
