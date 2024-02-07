@@ -7,19 +7,18 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <header>
-        <h1>Lista de Tarefas</h1>
-    </header>
-    <form>    
-        <h2>Insera sua tarefa</h2>
-        <input type="text" placeholder="Tarefas a serem feitas...">
-        <button type="submit">Adicionar</button>
-        <ol><li id="linha-cima"></li></ol>
+        <h1>Lista de tarefas</h1>
+        <form>
+        <input id="texto" type="text">
+    
+        <ul id="lista">
+    
+        </ul>
+    
+        <button onclick="adicionar()">Adicionar</button>
     </form>
-    <form action="">
-        <p id="text-output"></p>
-    </form>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="./main.js"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="./main.js"></script>
 </body>
 </html>

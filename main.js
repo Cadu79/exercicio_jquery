@@ -1,12 +1,13 @@
-const ul = document.getElementById('list');
+$('form').on('submit', function() {
+    e.preventDefault();
 
-$('form').on('submit', function(event) {
+    var tarefa = $('texto').val();
+    const linha = $('<li>'+tarefa+'</li>');
 
-            
-    event.preventDefault();
     
-    var $input = $(this).find('input');
-    var input = $input.val();
-    $('#text-output').text("Você digitou: " + input);
-   const linhaCima =  $('#linha-cima').val();
+    $("#lista").append(linha);
+});
+
+$('ul').on("click", "li", function() {
+    $('this').css('text-decoration', 'line-throught');
 });
