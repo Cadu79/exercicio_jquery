@@ -1,7 +1,7 @@
 $('form').on('submit', function() {
     e.preventDefault();
 
-    var tarefa = $('texto').val();
+    let tarefa = $('texto').val();
     const linha = $('<li>'+tarefa+'</li>');
 
     
